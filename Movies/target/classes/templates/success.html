@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User details</title>
+</head>
+<body>
+
+<table border="1">
+    <tr>
+        <th>Attribute</th>
+        <th>Value</th>
+    </tr>
+    <tr th:each="mapEntry : ${map}">
+        <td>[[${mapEntry.key}]]</td>
+        <td>[[${mapEntry.value}]]</td>
+    </tr>
+</table>
+
+</body>
+</html>

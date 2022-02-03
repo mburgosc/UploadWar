@@ -1,0 +1,9 @@
+    .notSelected{
+        background-color: skyBlue;
+    }
+        .selected{
+        background-color: coral;
+    }
+    .keywordCont{
+        background-color: #CACACA;
+    }

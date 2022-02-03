@@ -1,0 +1,83 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap-css">
+</head>
+<body>
+<header class="py-3 pt-3 bg-dark text-white row">
+    <div class="d-flex justify-content-between col-6">
+
+        <div class="d-flex text-decoration-none ">
+            <a class="btn bg-light text-dark" href="/movies">Movies</a>
+            <a class="btn bg-light text-dark" href="/actors">Actors</a>
+            <a class="btn bg-light text-dark" href="/keywords">keywords</a>
+        </div>
+        <div class="d-flex text-decoration-none ">
+            <a class="btn bg-light text-dark" href="/createactor">Create actor</a>
+            <a class="btn bg-light text-dark" href="/createmovie">create movie</a>
+        </div>
+        <div class="d-flex justify-content-center">
+            <h1>Create movie</h1>
+        </div>
+
+    </div>
+
+</header>
+<main class="m-3">
+
+        <form method="post" action="/createmovie">
+            <div class="form-group">
+            <label for="title">Title:</label>
+            <input type="text" name="title" id="title">
+            </div>
+            <div class="form-group">
+            <label for="budget">budget:</label>
+            <input type="text" name="budget" id="budget">
+            </div>
+            <div class="form-group">
+            <label for="homepage">Web page:</label>
+            <input type="text" name="homepage" id="homepage">
+            </div>
+            <div class="form-group">
+            <label for="overview">Overview:</label>
+            <input type="text" name="overview" id="overview">
+            </div>
+            <div class="form-group">
+            <label for="popularity">Popularity:</label>
+            <input type="number" name="popularity" id="popularity">
+            </div>
+            <div class="form-group">
+            <label for="releaseDate">Release date:</label>
+            <input type="date" name="releaseDateString" id="releaseDate">
+            </div>
+            <div class="form-group">
+            <label for="revenue">Revenue:</label>
+            <input type="text" name="revenue" id="revenue">
+            </div>
+            <div class="form-group">
+            <label for="runtime">Runtime:</label>
+            <input type="text" name="runtime" id="runtime">
+            </div>
+            <div class="form-group">
+            <label for="movieStatus">Movie status:</label>
+            <select name="movieStatus" id="movieStatus">
+                <option value="released">Released</option>
+                <option value="upcoming">Upcoming</option>
+            </select>
+            </div>
+            <div class="form-group">
+            <label for="tagline">Tagline:</label>
+            <input type="text" name="tagline" id="tagline">
+            </div>
+            <div class="form-group">
+            <label for="voteAverage">Vote average:</label>
+            <input type="number" name="voteAverage" id="voteAverage">
+            </div>
+            <div class="form-group">
+            <label for="voteCount">Vote count:</label>
+            <input type="number" name="voteCount" id="voteCount">
+            </div>
+            <button type="submit">Create</button>
+        </form>
+    </main>
+</body>
+</html>
